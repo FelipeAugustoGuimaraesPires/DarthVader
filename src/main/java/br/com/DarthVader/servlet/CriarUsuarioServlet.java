@@ -1,5 +1,8 @@
 package br.com.DarthVader.servlet;
 
+import br.com.DarthVader.dao.UsuarioDAO;
+import br.com.DarthVader.modal.Usuario;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,9 +15,20 @@ public class CriarUsuarioServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String userEmail=req.getParameter("User-Email");
+        String userNome=req.getParameter("User-Nome");
+        String userSenha=req.getParameter("User-Senha");
+        String userCPF=req.getParameter("User-CPF");
+        String userGrupo=req.getParameter("User-Grupo");
 
-        System.out.println(userEmail);
+        Usuario usuario=new Usuario();
+        usuario.setNome(userNome);
+        usuario.setEmail(userEmail);
+        usuario.setSenha(userSenha);
+        usuario.setCPF(userCPF);
+        usuario.setGrupo(userGrupo);
 
-        req.getRequestDispatcher("index.jsp").forward(req, resp);
+        new UsuarioDAO().criarUsuario(usuario);
+
+        req.getRequestDispatcher("index.html").forward(req, resp);
     }
 }
