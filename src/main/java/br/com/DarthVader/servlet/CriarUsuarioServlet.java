@@ -14,11 +14,15 @@ import java.io.IOException;
 public class CriarUsuarioServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String userID=req.getParameter("ID");//verificar
+
         String userEmail=req.getParameter("User-Email");
         String userNome=req.getParameter("User-Nome");
         String userSenha=req.getParameter("User-Senha");
         String userCPF=req.getParameter("User-CPF");
         String userGrupo=req.getParameter("User-Grupo");
+
+
 
         Usuario usuario=new Usuario();
         usuario.setNome(userNome);
@@ -26,8 +30,12 @@ public class CriarUsuarioServlet extends HttpServlet {
         usuario.setSenha(userSenha);
         usuario.setCPF(userCPF);
         usuario.setGrupo(userGrupo);
-
-        new UsuarioDAO().criarUsuario(usuario);
+        usuario.setID(userID);
+//
+//
+//        if (userID.isBlank()){
+//            UsuarioDAO.criarUsuario(user);
+//        }else UsuarioDAO.updateUsuario(user);
 
         req.getRequestDispatcher("index.html").forward(req, resp);
     }

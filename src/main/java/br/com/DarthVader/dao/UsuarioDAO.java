@@ -31,4 +31,34 @@ public class UsuarioDAO {
             System.out.println("Erro na conexão");
         }
     }
+
+    public void updateUsuario(Usuario user){
+
+        String SQL = "UPDATE usuario SET nome = ?, cpf = ?, senha = ?, grupo = ?  WHERE ID = ?";
+
+        try{
+            Connection connection=DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("Sucesso na conexão");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, user.getNome());
+            preparedStatement.setString(2, user.getCPF());
+            preparedStatement.setString(4, user.getSenha());
+            preparedStatement.setString(5, user.getGrupo());
+            preparedStatement.setString(6, user.getID());
+
+            preparedStatement.execute();
+
+            System.out.println("Update concluido");
+            connection.close();
+
+        }catch (Exception e){
+            System.out.println("Erro na conexão");
+        }
+
+    }
+
 }
+

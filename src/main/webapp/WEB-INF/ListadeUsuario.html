@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListadeUsuarios</title>
+</head>
+<body>
+
+<h1>Lista de Usuário</h1>
+
+<button style="font-size:24px">+</button>
+
+<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="procurar..">
+<button type="submit">Procurar</button>
+
+<table id="myTable">
+    <tr class="header">
+        <th style="width:20%;">Nome</th>
+        <th style="width:40%;">Email</th>
+        <th style="width:10%;">Status</th>
+        <th style="width:15%;">Alterar</th>
+        <th style='width:15%;'>Hab/Des</th>
+    </tr>
+    <tr>
+        <td>Leo</td>
+        <td>Leo@gmail.com</td>
+        <td>Ativo</td>
+        <td><button>Alterar</button></td>
+        <td>Ativar</td>
+    </tr>
+</table>
+</body>
+</html>
