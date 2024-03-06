@@ -1,6 +1,7 @@
 package br.com.DarthVader.modal;
 
 public class Usuario {
+    private String ID;
     private String email;
     private String Nome;
     private String CPF;
@@ -16,6 +17,25 @@ public class Usuario {
 
     public void setID(String ID) {
         this.ID = ID;
+    }
+
+    public Usuario(String email, String nome, String CPF, String senha, String grupo) {
+        this.email = email;
+        Nome = nome;
+        this.CPF = CPF;
+        Senha = senha;
+        Grupo = grupo;
+        Estatus=true;
+    }
+
+    public Usuario(String ID, String email, String nome, String CPF, String senha, String grupo) {
+        this.ID = ID;
+        this.email = email;
+        Nome = nome;
+        this.CPF = CPF;
+        Senha = senha;
+        Grupo = grupo;
+        Estatus=true;
     }
 
     public String getEmail() {
@@ -72,5 +92,13 @@ public class Usuario {
 
     public void setBackoffice(boolean backoffice) {
         this.backoffice = backoffice;
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
     }
 }

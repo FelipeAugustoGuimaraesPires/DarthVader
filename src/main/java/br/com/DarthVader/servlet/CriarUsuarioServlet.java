@@ -14,29 +14,24 @@ import java.io.IOException;
 public class CriarUsuarioServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String userID=req.getParameter("ID");//verificar
-
         String userEmail=req.getParameter("User-Email");
         String userNome=req.getParameter("User-Nome");
         String userSenha=req.getParameter("User-Senha");
         String userCPF=req.getParameter("User-CPF");
         String userGrupo=req.getParameter("User-Grupo");
+        String userID=req.getParameter("ID");
+
+        Usuario usuario=new Usuario(userID, userEmail, userNome, userCPF, userSenha, userGrupo);
+
+        if (userID.length()==0){
+
+            new UsuarioDAO().criarUsuario(usuario);
+        }else{
+
+        }
 
 
 
-        Usuario usuario=new Usuario();
-        usuario.setNome(userNome);
-        usuario.setEmail(userEmail);
-        usuario.setSenha(userSenha);
-        usuario.setCPF(userCPF);
-        usuario.setGrupo(userGrupo);
-        usuario.setID(userID);
-//
-//
-//        if (userID.isBlank()){
-//            UsuarioDAO.criarUsuario(user);
-//        }else UsuarioDAO.updateUsuario(user);
-
-        req.getRequestDispatcher("index.html").forward(req, resp);
+        resp.sendRedirect("/achar-todos-usuarios");
     }
 }
