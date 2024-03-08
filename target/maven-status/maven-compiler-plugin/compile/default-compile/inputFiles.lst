@@ -1,5 +1,10 @@
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\dao\UsuarioDAO.java
+C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\filtro\filtroDeAutenticacao.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\modal\Usuario.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\CriarUsuarioServlet.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\DeletarUsuariosServlet.java
+C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\HabilitarDesabilitarServlet.java
+C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\config\ConnectionPoolConfig.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\ListarUsuariosServlet.java
+C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\LogoutServlet.java
+C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\LoginServlet.java

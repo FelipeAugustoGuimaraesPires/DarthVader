@@ -19,17 +19,17 @@ public class CriarUsuarioServlet extends HttpServlet {
         String userSenha=req.getParameter("User-Senha");
         String userCPF=req.getParameter("User-CPF");
         String userGrupo=req.getParameter("User-Grupo");
-        String userID=req.getParameter("ID");
+        String userEstatus=req.getParameter("User-Estatus");
+        String userID=req.getParameter("id");
 
-        Usuario usuario=new Usuario(userID, userEmail, userNome, userCPF, userSenha, userGrupo);
+        Usuario usuario=new Usuario(userID, userEmail, userNome, userCPF, userSenha, userGrupo, userEstatus);
 
-        if (userID.length()==0){
-
-            new UsuarioDAO().criarUsuario(usuario);
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+        if (userID.isEmpty()){
+            usuarioDAO.criarUsuario(usuario);
         }else{
-
+            usuarioDAO.AlterarUsuario(usuario);
         }
-
 
 
         resp.sendRedirect("/achar-todos-usuarios");

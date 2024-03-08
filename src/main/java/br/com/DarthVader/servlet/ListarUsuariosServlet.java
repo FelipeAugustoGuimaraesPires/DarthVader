@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/achar-todos-usuarios")
+@WebServlet({"/achar-todos-usuarios","/admin/achar-todos-usuarios" })
 public class ListarUsuariosServlet extends HttpServlet {
 
     @Override
