@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
          if (isValid){
              req.getSession().setAttribute("loggedUser", email);
 
-             resp.sendRedirect("/achar-todos-usuarios");
+             resp.sendRedirect("PaginaInicial.jsp");
          }else {
              req.setAttribute("mensagem", "login inválido");
 
