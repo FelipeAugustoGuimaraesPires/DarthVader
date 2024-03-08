@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<%@ page contentType="text/html; charset=UTF-8" %>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +23,7 @@
             <br>
 
             <label for="senha"> Senha </label>
-            <input type="text" id="senha" name="senha">
+            <input type="password" id="senha" name="senha">
 
             <button type="submit">Login</button>
         </form>

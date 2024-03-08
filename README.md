@@ -12,7 +12,7 @@ CREATE CACHED TABLE "PUBLIC"."USUARIO"(
 
     "EMAIL" CHARACTER VARYING(50),
 
-    "SENHA" CHARACTER VARYING(30),
+    "SENHA" CHARACTER VARYING(255),
 
     "ESTATUS" CHARACTER VARYING(20),
 
@@ -22,4 +22,4 @@ CREATE CACHED TABLE "PUBLIC"."USUARIO"(
 
 );
 
-insert into usuarios (nome, cpf, email, senha, estatus, gupo, backoffice) values ('Gabriel Aron', '12234567890','gabriel#gmail.com','senha123','Ativo','ADM', true)
+insert into usuario (nome, cpf, email, senha, estatus, grupo, backoffice) values ('Gabriel Aron', '12234567890','gabriel#gmail.com','senha123','Ativo','ADM', true)

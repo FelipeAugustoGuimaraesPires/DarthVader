@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+<%@ page contentType="text/html; charset=UTF-8" %>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+    <script src="../Javascript/Pesuisa.js"></script>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +11,7 @@
     <body>
         <c:if test="${sessionScope.loggedUser !=null}">
             <span>${sessionScope.loggedUser}</span>
-            <a href="/logout">Logout</a>
+            <a href="/logout">Sair</a>
         </c:if>
 
         <h1>Lista de Usuário</h1>
@@ -17,11 +19,9 @@
         <a href="CriarUsuario.jsp"><button style="font-size:24px" >+</button></a>
 
         <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="procurar..">
-        <button type="submit">Procurar</button>
 
         <table id="myTable">
             <tr class="header">
-                <th>ID</th>
                 <th>Nome</th>
                 <th>Email</th>
                 <th>Status</th>
@@ -32,7 +32,6 @@
             </tr>
             <c:forEach var="usuarios" items="${usuarios}">
                 <tr>
-                    <td>${usuarios.ID}</td>
                     <td>${usuarios.nome}</td>
                     <td>${usuarios.email}</td>
                     <td>${usuarios.estatus}</td>

@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
@@ -22,7 +24,23 @@ public class LoginServlet extends HttpServlet {
         String email = req.getParameter("email");
         String senha = req.getParameter("senha");
 
-        Usuario user = new Usuario(email, senha);
+        String senhaCriptografada;
+
+        try {
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] hashBytes = digest.digest(senha.getBytes("UTF-8"));
+
+            StringBuilder sb = new StringBuilder();
+            for (byte b : hashBytes) {
+                sb.append(String.format("%02x", b));
+            }
+            senhaCriptografada = sb.toString();
+        } catch (NoSuchAlgorithmException e) {
+            senhaCriptografada=senha;
+            e.printStackTrace();
+        }
+
+        Usuario user = new Usuario(email, senhaCriptografada);
 
          boolean isValid = new UsuarioDAO().VerificarLogin(user);
 

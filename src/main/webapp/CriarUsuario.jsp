@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<%@ page contentType="text/html; charset=UTF-8" %>
 
 <head>
     <meta charset="UTF-8">
@@ -8,25 +9,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     <link rel="stylesheet" href="style.css">
+    <script src="../Javascript/verifica.js"></script>
 </head>
 
 <body>
     <c:if test="${sessionScope.loggedUser !=null}">
         <span>${sessionScope.loggedUser}</span>
-        <a href="/logout">Logout</a>
+        <a href="/logout">Sair</a>
     </c:if>
+
     <title>Cadastrar Usuário</title>
-    <form action="/criar-usuario" method="post">
+
+
+    <form action="/criar-usuario" method="post" onsubmit="return validarFormulario()">
         <section>
-            <p> Cadastrar ou alterar Usuário </p>
+            <p> Cadastrar Usuário </p>
 
             <div>Nome: <input type="text" name="User-Nome" id="User-Nome"></div>
             <div>CPF: <input type="text" name="User-CPF" id="User-CPF"></div>
             <div>E-mail: <input type="email" name="User-Email" id="User-Email"></div>
-            <div>Senha: <input type="text"></div>
-            <div>Confirmar Senha: <input type="text" name="User-Senha" id="User-Senha"></div>
+            <div>Senha: <input type="password" id="senha"></div>
+            <div>Confirmar Senha: <input type="password" name="User-Senha" id="confirmarSenha"></div>
             <div>Grupo: <input type=text name="User-Grupo" id="User-Grupo"></div>
 
             <div>Estatus:
@@ -37,10 +41,11 @@
                 </datalist>
             </div>
             <button type="submit">Ok</button>
-            <button>Cancelar</button>
+
             <div><input type="hidden" name="id" id="id"></div>
         </section>
     </form>
+    <a href="/achar-todos-usuarios"><button>Cancelar</button></a>
 
 
 </body>

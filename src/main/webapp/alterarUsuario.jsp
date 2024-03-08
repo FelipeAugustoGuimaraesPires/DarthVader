@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<%@ page contentType="text/html; charset=UTF-8" %>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,29 +10,28 @@
               href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
         <link rel="stylesheet" href="style.css">
+        <script src="../Javascript/verifica.js"></script>
     </head>
         <c:if test="${sessionScope.loggedUser !=null}">
             <span>${sessionScope.loggedUser}</span>
-            <a href="/logout">Logout</a>
+            <a href="/logout">Sair</a>
         </c:if>
         <body>
-            <title>Alterar Usuário</title>
-            <form action="/criar-usuario" method="post">
-                <section>
-                    <p> Alterar Usuário </p>
+           <title>Alterar Usuário</title>
+               <form action="/criar-usuario" method="post" onsubmit="return validarFormulario()">
+                   <section>
+                       <p>Alterar Usuário</p>
 
-                    <div>Nome: <input type="text" name="User-Nome" id="User-Nome" value="${param.nome}"></div>
-                    <div>CPF: <input type="text" name="User-CPF" id="User-CPF" value="${param.cpf}"></div>
-                    <div>Senha: <input type="text"></div>
-                    <div>Confirmar Senha: <input type="text" name="User-Senha" id="User-Senha"></div>
-                    <div>Grupo: <input type=text name="User-Grupo" id="User-Grupo" value="${param.Grupo}"></div>
-                    <button type="submit">Ok</button>
-                    <button>Cancelar</button>
-                    <div><input type="hidden" name="id" id="id" value="${param.id}"></div>
-                </section>
-            </form>
-
-
-        </body>
+                       <div>Nome: <input type="text" name="User-Nome" id="User-Nome" value="${param.nome}"></div>
+                       <div>CPF: <input type="text" name="User-CPF" id="User-CPF" value="${param.cpf}"></div>
+                       <div>Senha: <input type="password" id="senha"></div>
+                       <div>Confirmar Senha: <input type="password" name="User-Senha" id="confirmarSenha"></div>
+                       <div>Grupo: <input type="text" name="User-Grupo" id="User-Grupo" value="${param.Grupo}"></div>
+                       <button type="submit">Ok</button>
+                       <div><input type="hidden" name="id" id="id" value="${param.id}"></div>
+                       <span id="mensagemErro" style="display: none; color: red;"></span>
+                   </section>
+               </form>
+               <a href="/achar-todos-usuarios"><button>Cancelar</button></a>
 
 </html>

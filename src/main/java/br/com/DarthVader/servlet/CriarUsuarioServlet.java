@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 @WebServlet("/criar-usuario")
 public class CriarUsuarioServlet extends HttpServlet {
@@ -22,7 +24,23 @@ public class CriarUsuarioServlet extends HttpServlet {
         String userEstatus=req.getParameter("User-Estatus");
         String userID=req.getParameter("id");
 
-        Usuario usuario=new Usuario(userID, userEmail, userNome, userCPF, userSenha, userGrupo, userEstatus);
+        String senhaCriptografada = null;
+        try {
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] hashBytes = digest.digest(userSenha.getBytes("UTF-8"));
+
+            StringBuilder sb = new StringBuilder();
+            for (byte b : hashBytes) {
+                sb.append(String.format("%02x", b));
+            }
+            senhaCriptografada = sb.toString();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+
+
+        Usuario usuario=new Usuario(userID, userEmail, userNome, userCPF, senhaCriptografada, userGrupo, userEstatus);
+        System.out.println(usuario.getID());
 
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         if (userID.isEmpty()){
@@ -30,7 +48,6 @@ public class CriarUsuarioServlet extends HttpServlet {
         }else{
             usuarioDAO.AlterarUsuario(usuario);
         }
-
 
         resp.sendRedirect("/achar-todos-usuarios");
     }
