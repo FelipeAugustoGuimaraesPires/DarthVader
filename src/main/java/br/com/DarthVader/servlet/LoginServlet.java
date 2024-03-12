@@ -1,5 +1,6 @@
 package br.com.DarthVader.servlet;
 
+import br.com.DarthVader.config.Criptografia;
 import br.com.DarthVader.dao.UsuarioDAO;
 import br.com.DarthVader.modal.Usuario;
 
@@ -21,26 +22,13 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Criptografia criptografia = new Criptografia();
+
         String email = req.getParameter("email");
         String senha = req.getParameter("senha");
 
-        String senhaCriptografada;
+        Usuario user = new Usuario(email, senha);
 
-        try {
-            MessageDigest digest = MessageDigest.getInstance("SHA-256");
-            byte[] hashBytes = digest.digest(senha.getBytes("UTF-8"));
-
-            StringBuilder sb = new StringBuilder();
-            for (byte b : hashBytes) {
-                sb.append(String.format("%02x", b));
-            }
-            senhaCriptografada = sb.toString();
-        } catch (NoSuchAlgorithmException e) {
-            senhaCriptografada=senha;
-            e.printStackTrace();
-        }
-
-        Usuario user = new Usuario(email, senhaCriptografada);
 
          boolean isValid = new UsuarioDAO().VerificarLogin(user);
 

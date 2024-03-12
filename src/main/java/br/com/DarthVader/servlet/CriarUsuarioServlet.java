@@ -1,5 +1,6 @@
 package br.com.DarthVader.servlet;
 
+import br.com.DarthVader.config.Criptografia;
 import br.com.DarthVader.dao.UsuarioDAO;
 import br.com.DarthVader.modal.Usuario;
 
@@ -9,13 +10,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 @WebServlet("/criar-usuario")
 public class CriarUsuarioServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Criptografia criptografia = new Criptografia();
+
         String userEmail=req.getParameter("User-Email");
         String userNome=req.getParameter("User-Nome");
         String userSenha=req.getParameter("User-Senha");
@@ -24,19 +25,7 @@ public class CriarUsuarioServlet extends HttpServlet {
         String userEstatus=req.getParameter("User-Estatus");
         String userID=req.getParameter("id");
 
-        String senhaCriptografada = null;
-        try {
-            MessageDigest digest = MessageDigest.getInstance("SHA-256");
-            byte[] hashBytes = digest.digest(userSenha.getBytes("UTF-8"));
-
-            StringBuilder sb = new StringBuilder();
-            for (byte b : hashBytes) {
-                sb.append(String.format("%02x", b));
-            }
-            senhaCriptografada = sb.toString();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
+        String senhaCriptografada = criptografia.Criptografar(userSenha);
 
 
         Usuario usuario=new Usuario(userID, userEmail, userNome, userCPF, senhaCriptografada, userGrupo, userEstatus);

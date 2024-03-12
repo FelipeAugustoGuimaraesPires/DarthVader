@@ -1,6 +1,7 @@
 package br.com.DarthVader.dao;
 
 import br.com.DarthVader.config.ConnectionPoolConfig;
+import br.com.DarthVader.config.Criptografia;
 import br.com.DarthVader.modal.Usuario;
 
 import java.sql.*;
@@ -119,6 +120,7 @@ public class UsuarioDAO {
     }
 
     public boolean VerificarLogin(Usuario user){
+        Criptografia criptografia = new Criptografia();
         String SQL ="select * from usuario where email = ?";
 
         try {
@@ -133,7 +135,7 @@ public class UsuarioDAO {
             System.out.println("sucesso em selecionar email");
 
             while (resultSet.next()){
-                String senha = resultSet.getString("SENHA");
+                String senha = criptografia.DesCriptografar(resultSet.getString("SENHA"));
 
                 if (senha.equals(user.getSenha())){
 
