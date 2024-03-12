@@ -18,8 +18,8 @@ CREATE CACHED TABLE "PUBLIC"."USUARIO"(
 
     "GRUPO" CHARACTER VARYING(50),
 
-    "BACKOFFICE" BOOLEAN
+    "BACKOFFICE" CHARACTER VARYING(50)
 
 );
 
-insert into usuario (nome, cpf, email, senha, estatus, grupo, backoffice) values ('Gabriel Aron', '12234567890','gabriel#gmail.com','senha123','Ativo','ADM', true)
+insert into usuario (nome, cpf, email, senha, estatus, grupo, backoffice) values ('Felipe','522.692.428-31','Felipe@gmail.com','0Ox9XCBVsKJdpA9B3HO7hQ==','Ativo','ADM,'null')
