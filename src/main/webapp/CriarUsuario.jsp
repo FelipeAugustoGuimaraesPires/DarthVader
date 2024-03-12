@@ -10,7 +10,7 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
-    <script src="../Javascript/verifica.js"></script>
+    <script src="../Javascript/verificaCriar.js"></script>
 </head>
 
 <body>
@@ -27,27 +27,38 @@
             <p> Cadastrar Usuário </p>
 
             <div>Nome: <input type="text" name="User-Nome" id="User-Nome"></div>
-            <div>CPF: <input type="text" name="User-CPF" id="User-CPF"></div>
+            <div>CPF: <input type="text" name="User-CPF" id="User-CPF" oninput="formatarCPF()" maxlength="14"></div>
             <div>E-mail: <input type="email" name="User-Email" id="User-Email"></div>
             <div>Senha: <input type="password" id="senha"></div>
             <div>Confirmar Senha: <input type="password" name="User-Senha" id="confirmarSenha"></div>
-            <div>Grupo: <input type=text name="User-Grupo" id="User-Grupo"></div>
-
-            <div>Estatus:
-                <input list="status" id="User-Estatus" name="User-Estatus"> </input><br/><br/>
-                <datalist id="status">
-                  <option value="Ativo">
-                  <option value="Inativo">
+            <div>Grupo:
+                <input list="grupo" name="User-Grupo" id="User-Grupo"> </input><br/><br/>
+                <datalist id="grupo">
+                  <option value="ADM">
+                  <option value="Estoquista">
                 </datalist>
             </div>
+
             <button type="submit">Ok</button>
 
             <div><input type="hidden" name="id" id="id"></div>
         </section>
     </form>
     <a href="/achar-todos-usuarios"><button>Cancelar</button></a>
+    <span id="mensagemErro" style="display: none; color: red;"></span>
 
+    <script>
+        function formatarCPF() {
+            let cpfInput = document.getElementById('User-CPF');
+            let cpf = cpfInput.value;
 
+            cpf = cpf.replace(/\D/g, '');
+
+            cpf = cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+
+            cpfInput.value = cpf;
+        }
+    </script>
 </body>
 
 </html>

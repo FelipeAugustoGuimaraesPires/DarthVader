@@ -154,6 +154,41 @@ public class UsuarioDAO {
 
     }
 
+    public boolean VerificarHabilitado(Usuario user){
+        Criptografia criptografia = new Criptografia();
+        String SQL ="select * from usuario where email = ?";
+
+        try {
+            Connection connection = ConnectionPoolConfig.getConnection();
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, user.getEmail());
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            System.out.println("sucesso em selecionar email");
+
+            while (resultSet.next()){
+                String habilitado =resultSet.getString("ESTATUS");
+
+                if (habilitado.equals("Ativo")){
+
+                    return true;
+                }
+            }
+
+            connection.close();
+            return false;
+        }catch (Exception e){
+
+            System.out.println("ERRO: "+e.getMessage());
+
+            return false;
+        }
+
+    }
+
     public void HabilitaDesabilitaUser(String userid){
         String SQL ="select * from usuario where id = ?";
 

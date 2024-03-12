@@ -39,10 +39,7 @@
                     <td>
                         <c:if test="${sessionScope.loggedUser !=null}">
                             <div id="acao">
-                                <form action="/deletar-usuario" method="post">
-                                    <input type="hidden" id="id" name="id" value=${usuarios.ID}>
-                                    <button type="submit">Deletar</button>
-                                </form>
+                                
 
                                 <input type="hidden" id="id" name="id" value=${usuarios.ID}>
                                 <input type="hidden" id="senha" name="senha" value=${usuarios.senha}>

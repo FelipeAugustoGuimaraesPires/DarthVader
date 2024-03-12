@@ -31,8 +31,9 @@ public class LoginServlet extends HttpServlet {
 
 
          boolean isValid = new UsuarioDAO().VerificarLogin(user);
+         boolean isActive = new UsuarioDAO().VerificarHabilitado(user);
 
-         if (isValid){
+         if (isValid&&isActive){
              req.getSession().setAttribute("loggedUser", email);
 
              resp.sendRedirect("PaginaInicial.jsp");

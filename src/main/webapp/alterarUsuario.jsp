@@ -23,15 +23,30 @@
                        <p>Alterar Usuário</p>
 
                        <div>Nome: <input type="text" name="User-Nome" id="User-Nome" value="${param.nome}"></div>
-                       <div>CPF: <input type="text" name="User-CPF" id="User-CPF" value="${param.cpf}"></div>
+                       <div>CPF: <input type="text" name="User-CPF" id="User-CPF" value="${param.cpf}" maxlength="14" oninput="formatarCPF(this)"></div>
                        <div>Senha: <input type="password" id="senha"></div>
                        <div>Confirmar Senha: <input type="password" name="User-Senha" id="confirmarSenha"></div>
                        <div>Grupo: <input type="text" name="User-Grupo" id="User-Grupo" value="${param.Grupo}"></div>
                        <button type="submit">Ok</button>
                        <div><input type="hidden" name="id" id="id" value="${param.id}"></div>
-                       <span id="mensagemErro" style="display: none; color: red;"></span>
                    </section>
                </form>
                <a href="/achar-todos-usuarios"><button>Cancelar</button></a>
+               <span id="mensagemErro" style="display: none; color: red;"></span>
 
+               <script>
+                   function formatarCPF(input) {
+                       var cpf = input.value.replace(/\D/g, '');
+
+                       if (cpf.length > 3 && cpf.length <= 6) {
+                           cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+                       } else if (cpf.length > 6 && cpf.length <= 9) {
+                           cpf = cpf.replace(/(\d{3})(\d{3})(\d)/, '$1.$2.$3');
+                       } else if (cpf.length > 9) {
+                           cpf = cpf.replace(/(\d{3})(\d{3})(\d{3})(\d)/, '$1.$2.$3-$4');
+                       }
+
+                       input.value = cpf;
+                   }
+               </script>
 </html>

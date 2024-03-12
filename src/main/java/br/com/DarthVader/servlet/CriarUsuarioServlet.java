@@ -28,7 +28,7 @@ public class CriarUsuarioServlet extends HttpServlet {
         String senhaCriptografada = criptografia.Criptografar(userSenha);
 
 
-        Usuario usuario=new Usuario(userID, userEmail, userNome, userCPF, senhaCriptografada, userGrupo, userEstatus);
+        Usuario usuario=new Usuario(userID, userEmail, userNome, userCPF, senhaCriptografada, userGrupo, "Ativo");
         System.out.println(usuario.getID());
 
         UsuarioDAO usuarioDAO = new UsuarioDAO();
