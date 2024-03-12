@@ -37,10 +37,17 @@ public class LoginServlet extends HttpServlet {
              req.getSession().setAttribute("loggedUser", email);
 
              resp.sendRedirect("PaginaInicial.jsp");
-         }else {
+         } else if (!isActive) {
+             req.setAttribute("mensagem", "Usuário Inativado");
+
+             req.getRequestDispatcher("index.jsp").forward(req, resp);
+
+         }else{
              req.setAttribute("mensagem", "login inválido");
 
              req.getRequestDispatcher("index.jsp").forward(req, resp);
          }
+
+
     }
 }
