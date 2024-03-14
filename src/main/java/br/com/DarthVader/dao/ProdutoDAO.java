@@ -23,7 +23,7 @@ public class ProdutoDAO {
             preparedStatement.setString(2, produto.getAvaliacao());
             preparedStatement.setString(3, produto.getDescricao());
             preparedStatement.setBigDecimal(4, produto.getPreco());
-            preparedStatement.setInt(5, produto.getQtdEstoque()););
+            preparedStatement.setInt(5, produto.getQtdEstoque());
             preparedStatement.setBytes(6, produto.getImagem());
 
             preparedStatement.execute();
@@ -47,7 +47,7 @@ public class ProdutoDAO {
             preparedStatement.setString(2, produto.getAvaliacao());
             preparedStatement.setString(3, produto.getDescricao());
             preparedStatement.setBigDecimal(4, produto.getPreco());
-            preparedStatement.setInt(5, produto.getQtdEstoque()););
+            preparedStatement.setInt(5, produto.getQtdEstoque());
             preparedStatement.setBytes(6, produto.getImagem());
             preparedStatement.setString(7, produto.getId());
 

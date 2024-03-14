@@ -5,6 +5,7 @@ br\com\DarthVader\filtro\filtroDeAutenticacao.class
 br\com\DarthVader\servlet\HabilitarDesabilitarServlet.class
 br\com\DarthVader\modal\Imagem.class
 br\com\DarthVader\servlet\ListarUsuariosServlet.class
+br\com\DarthVader\dao\ProdutoDAO.class
 br\com\DarthVader\dao\UsuarioDAO.class
 br\com\DarthVader\servlet\LogoutServlet.class
 br\com\DarthVader\modal\Produto.class
