@@ -1,6 +1,6 @@
 package br.com.DarthVader.servlet.Usuario;
 
-import br.com.DarthVader.dao.Usuario.UsuarioDAO;
+import br.com.DarthVader.dao.UsuarioDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/habilitar-desabilitar")
+@WebServlet("/habilitar-desabilitar-usuario")
 public class HabilitarDesabilitarServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

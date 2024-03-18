@@ -4,35 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="Pequena alteração visual no LoginServlet">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="Alteração na validação de login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/UsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/Usuario/UsuarioDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/modal/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/modal/Usuario/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/CriarUsuarioServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/CriarUsuarioServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/DeletarUsuariosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/DeletarUsuariosServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/HabilitarDesabilitarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/HabilitarDesabilitarServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/ListarUsuariosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/ListarUsuariosServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/Usuario/UsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/UsuarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/modal/Usuario/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/modal/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CriarUsuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CriarUsuario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Javascript/Pesuisa.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/Pesuisa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Javascript/confirma.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/confirma.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/CriarUsuarioServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/CriarUsuarioServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/DeletarUsuariosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/DeletarUsuariosServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/HabilitarDesabilitarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/HabilitarDesabilitarServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/ListarUsuariosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/ListarUsuariosServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CriarUsuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/User/CriarUsuario.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/PaginaInicial.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/PaginaInicial.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/listarUsuarios.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listarUsuarios.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/dao/UsuarioDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/modal/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/CriarUsuarioServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/DeletarUsuariosServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/HabilitarDesabilitarServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/ListarUsuariosServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/alterarUsuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/User/alterarUsuario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listarUsuarios.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/User/listarUsuarios.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/dao/Usuario/UsuarioDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/modal/Usuario/Usuario.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/Usuario/CriarUsuarioServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/Usuario/CriarUsuarioServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/Usuario/DeletarUsuariosServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/Usuario/DeletarUsuariosServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/Usuario/HabilitarDesabilitarServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/Usuario/HabilitarDesabilitarServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/Usuario/ListarUsuariosServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/Usuario/ListarUsuariosServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/CriarUsuario_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/CriarUsuario_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/CriarUsuario_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/CriarUsuario_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-03-18" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-03-18" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/PaginaInicial_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/PaginaInicial_jsp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/PaginaInicial_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/PaginaInicial_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/listarUsuarios_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/listarUsuarios_jsp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/listarUsuarios_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/listarUsuarios_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +46,21 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;FelipeAugustoGuimaraesPires&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="adaeff65-5a6d-4f50-b754-1d8cbc221a99" />
+        <option name="url" value="https://github.com/FelipeAugustoGuimaraesPires/DarthVader.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -75,6 +86,11 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Produto" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\webapp\Produto" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\webapp\User" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager">
@@ -208,14 +224,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/Usuario/UsuarioDAO.java</url>
-          <line>190</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/Usuario/UsuarioDAO.java</url>
-          <line>122</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/ProdutoDAO.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

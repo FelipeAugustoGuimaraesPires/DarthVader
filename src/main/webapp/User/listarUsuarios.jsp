@@ -12,7 +12,8 @@
     <body>
         <c:if test="${sessionScope.loggedUser != null || sessionScope.loggedUserEstoque != null}">
             <span>${sessionScope.loggedUser}</span>
-            <a href="/logout">Sair</a>
+            <a href="/logout"><button>Sair</button></a>
+            <a href="/PaginaInicial.jsp"><button>Menu</button></a>
         </c:if>
 
         <h1>Lista de Usuário</h1>
@@ -46,9 +47,9 @@
                                 <input type="hidden" id="id" name="id" value=${usuarios.ID}>
                                 <input type="hidden" id="senha" name="senha" value=${usuarios.senha}>
                                 <input type="hidden" id="cpf" name="cpf" value=${usuarios.CPF}>
-                                <a id="Atualizar" href="alterarUsuario.jsp?id=${usuarios.ID}&nome=${usuarios.nome}&Grupo=${usuarios.grupo}&senha=${usuarios.senha}&cpf=${usuarios.CPF}"><button>Atualizar</button></a>
+                                <a id="Atualizar" href="./User/alterarUsuario.jsp?id=${usuarios.ID}&nome=${usuarios.nome}&Grupo=${usuarios.grupo}&senha=${usuarios.senha}&cpf=${usuarios.CPF}"><button>Atualizar</button></a>
 
-                                <form id= "formularioStatus" action="/habilitar-desabilitar" method="post">
+                                <form id= "formularioStatus" action="/habilitar-desabilitar-usuario" method="post">
                                     <input type="hidden" id="id" name="id" value=${usuarios.ID}>
                                     <button id="botaoStatus" type="submit">Alterar estatus</button>
                                 </form>

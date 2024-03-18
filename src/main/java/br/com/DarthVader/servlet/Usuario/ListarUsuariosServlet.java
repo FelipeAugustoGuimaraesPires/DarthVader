@@ -1,7 +1,7 @@
 package br.com.DarthVader.servlet.Usuario;
 
-import br.com.DarthVader.dao.Usuario.UsuarioDAO;
-import br.com.DarthVader.modal.Usuario.Usuario;
+import br.com.DarthVader.dao.UsuarioDAO;
+import br.com.DarthVader.modal.Usuario;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,6 +20,6 @@ public class ListarUsuariosServlet extends HttpServlet {
 
         req.setAttribute("usuarios", usuarios);
 
-        req.getRequestDispatcher("listarUsuarios.jsp").forward(req, resp);
+        req.getRequestDispatcher("./User/listarUsuarios.jsp").forward(req, resp);
     }
 }

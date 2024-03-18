@@ -16,7 +16,8 @@
 <body>
     <c:if test="${sessionScope.loggedUser !=null}">
         <span>${sessionScope.loggedUser}</span>
-        <a href="/logout">Sair</a>
+        <a href="/logout"><button>Sair</button></a>
+        <a href="/PaginaInicial.jsp"><button>Menu</button></a>
     </c:if>
 
     <title>Cadastrar Usuário</title>

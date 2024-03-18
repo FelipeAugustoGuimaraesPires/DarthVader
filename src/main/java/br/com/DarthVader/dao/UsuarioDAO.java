@@ -1,8 +1,8 @@
-package br.com.DarthVader.dao.Usuario;
+package br.com.DarthVader.dao;
 
 import br.com.DarthVader.config.ConnectionPoolConfig;
 import br.com.DarthVader.config.Criptografia;
-import br.com.DarthVader.modal.Usuario.Usuario;
+import br.com.DarthVader.modal.Usuario;
 
 import java.sql.*;
 import java.util.ArrayList;

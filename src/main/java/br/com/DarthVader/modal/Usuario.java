@@ -1,4 +1,4 @@
-package br.com.DarthVader.modal.Usuario;
+package br.com.DarthVader.modal;
 
 public class Usuario {
     private String ID;
@@ -27,7 +27,7 @@ public class Usuario {
         this.CPF = CPF;
         Senha = senha;
         Grupo = grupo;
-        this.estatus="true";
+        this.estatus="Ativo";
     }
 
     public Usuario(String email, String senha) {
