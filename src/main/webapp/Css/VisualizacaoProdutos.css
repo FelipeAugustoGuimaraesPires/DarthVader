@@ -1,0 +1,44 @@
+
+.container{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    width:100%;
+    height:calc(100vh - 85px);
+}
+
+.Lado-esquerdo{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.itens{
+    align-self: flex-end;
+}
+
+.imagem-selecionada{
+    max-width:400px;
+}
+
+.imagem-selecionada img{
+    width:100%;
+    border-radius:10px;
+}
+
+.imagens-carrossel{
+    display:flex;
+    justify-content: space-evenly;
+    max-width:400px;
+    gap:10px;
+}
+
+.imagens-carrossel img{
+    width:100%;
+}
+
+.lado-direito{
+    width:100%;
+}
+
+.lado-direito{
