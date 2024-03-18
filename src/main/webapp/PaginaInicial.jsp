@@ -14,6 +14,10 @@
 </head>
 
 <body>
+    <c:if test="${sessionScope.loggedUser != null || sessionScope.loggedUserEstoque != null}">
+        <span>${sessionScope.loggedUser}</span>
+        <a href="/logout">Sair</a>
+    </c:if>
     <div>Principal</div>
     <a href="">Listar Produto</a>
     <a href="/achar-todos-usuarios">Listar Usuário</a>

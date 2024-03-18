@@ -1,12 +1,11 @@
-package br.com.DarthVader.dao;
+package br.com.DarthVader.dao.Usuario;
 
 import br.com.DarthVader.config.ConnectionPoolConfig;
 import br.com.DarthVader.config.Criptografia;
-import br.com.DarthVader.modal.Usuario;
+import br.com.DarthVader.modal.Usuario.Usuario;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -155,7 +154,6 @@ public class UsuarioDAO {
     }
 
     public boolean VerificarHabilitado(Usuario user){
-        Criptografia criptografia = new Criptografia();
         String SQL ="select * from usuario where email = ?";
 
         try {
@@ -173,6 +171,40 @@ public class UsuarioDAO {
                 String habilitado =resultSet.getString("ESTATUS");
 
                 if (habilitado.equals("Ativo")){
+
+                    return true;
+                }
+            }
+
+            connection.close();
+            return false;
+        }catch (Exception e){
+
+            System.out.println("ERRO: "+e.getMessage());
+
+            return false;
+        }
+
+    }
+
+    public boolean VerificarGrupo(Usuario user){
+        String SQL ="select * from usuario where email = ?";
+
+        try {
+            Connection connection = ConnectionPoolConfig.getConnection();
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, user.getEmail());
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            System.out.println("sucesso em selecionar email");
+
+            while (resultSet.next()){
+                String grupo =resultSet.getString("Grupo");
+
+                if (grupo.equals("ADM")){
 
                     return true;
                 }

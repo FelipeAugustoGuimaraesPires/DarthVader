@@ -1,29 +1,24 @@
-  function exibirConfirmacao() {
-        var span = document.createElement("span");
-        span.innerText = "Deseja mesmo Alterar Status do usuário?";
+class ConfirmationPopup {
+  constructor(buttonId, formId) {
+    this.buttonId = buttonId;
+    this.formId = formId;
+    this.button = document.getElementById(buttonId);
+    this.form = document.getElementById(formId);
 
-        var botaoSim = document.createElement("button");
-        botaoSim.innerText = "Sim";
-        botaoSim.addEventListener("click", alterarStatus);
+    this.attachEvent();
+  }
 
-        var botaoNao = document.createElement("button");
-        botaoNao.innerText = "Não";
-        botaoNao.addEventListener("click", fecharSpan);
+  attachEvent() {
+    this.button.addEventListener('click', this.showConfirmation.bind(this));
+  }
 
-        span.appendChild(botaoSim);
-        span.appendChild(botaoNao);
-
-        document.body.appendChild(span);
+  showConfirmation(event) {
+    event.preventDefault();
+    const confirmation = confirm('Deseja alterar o status?');
+    if (confirmation) {
+      this.form.submit();
     }
+  }
+}
 
-    function alterarStatus() {
-
-        fecharSpan();
-    }
-
-    function fecharSpan() {
-        var span = document.querySelector("span");
-        if (span) {
-            span.parentNode.removeChild(span);
-        }
-    }
+const popup = new ConfirmationPopup('botaoStatus', 'formularioStatus');

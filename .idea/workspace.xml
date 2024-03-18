@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="Tela de listagem e criaçao de produtos feitas" />
+    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="Correção em login (Login somente com usuario Ativo); Correção em criar e aterar usuario (Criar como Ativo; Combo box de grupo; Validação de preenchimento; Validação de CPF);">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/CriarUsuario_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/CriarUsuario_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/CriarUsuario_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/CriarUsuario_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/alterarUsuario_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/alterarUsuario_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/alterarUsuario_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/alterarUsuario_jsp.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,11 +44,9 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Maven.DarthVader [tomcat7:run].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
 }</component>
   <component name="RunManager">
@@ -59,7 +65,6 @@
                 <option value="tomcat7:run" />
               </list>
             </option>
-            <option name="multimoduleDir" />
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
@@ -74,13 +79,6 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -147,23 +145,7 @@
       <option name="project" value="LOCAL" />
       <updated>1710262553193</updated>
     </task>
-    <task id="LOCAL-00008" summary="Produto add e listagem">
-      <option name="closed" value="true" />
-      <created>1710358497380</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1710358497380</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Tela de listagem e criaçao de produtos feitas">
-      <option name="closed" value="true" />
-      <created>1710444820193</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1710444820193</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,9 +165,7 @@
     <MESSAGE value="Final Sprint1" />
     <MESSAGE value="Correção criptografia" />
     <MESSAGE value="Correção em login (Login somente com usuario Ativo); Correção em criar e aterar usuario (Criar como Ativo; Combo box de grupo; Validação de preenchimento; Validação de CPF);" />
-    <MESSAGE value="Produto add e listagem" />
-    <MESSAGE value="Tela de listagem e criaçao de produtos feitas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tela de listagem e criaçao de produtos feitas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção em login (Login somente com usuario Ativo); Correção em criar e aterar usuario (Criar como Ativo; Combo box de grupo; Validação de preenchimento; Validação de CPF);" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
