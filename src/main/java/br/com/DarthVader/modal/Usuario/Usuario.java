@@ -1,4 +1,4 @@
-package br.com.DarthVader.modal;
+package br.com.DarthVader.modal.Usuario;
 
 public class Usuario {
     private String ID;

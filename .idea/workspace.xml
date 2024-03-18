@@ -4,14 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="Correção em login (Login somente com usuario Ativo); Correção em criar e aterar usuario (Criar como Ativo; Combo box de grupo; Validação de preenchimento; Validação de CPF);">
+    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="Pequena alteração visual no LoginServlet">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/UsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/Usuario/UsuarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/modal/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/modal/Usuario/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/CriarUsuarioServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/CriarUsuarioServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/DeletarUsuariosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/DeletarUsuariosServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/HabilitarDesabilitarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/HabilitarDesabilitarServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/ListarUsuariosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Usuario/ListarUsuariosServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CriarUsuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CriarUsuario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Javascript/Pesuisa.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/Pesuisa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Javascript/confirma.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/confirma.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/PaginaInicial.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/PaginaInicial.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listarUsuarios.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listarUsuarios.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/dao/UsuarioDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/modal/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/CriarUsuarioServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/DeletarUsuariosServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/HabilitarDesabilitarServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/ListarUsuariosServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/CriarUsuario_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/CriarUsuario_jsp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/CriarUsuario_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/CriarUsuario_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/alterarUsuario_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/alterarUsuario_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/alterarUsuario_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/alterarUsuario_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/PaginaInicial_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/PaginaInicial_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/PaginaInicial_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/PaginaInicial_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/listarUsuarios_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/listarUsuarios_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/listarUsuarios_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/listarUsuarios_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +50,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,9 +67,16 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LENOVO/IdeaProjects/DarthVader/src/main/java/br/com/DarthVader/servlet/Produto&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Produto" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="DarthVader [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
@@ -145,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710262553193</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Pequena alteração visual no LoginServlet">
+      <option name="closed" value="true" />
+      <created>1710265432879</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710265432879</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,9 +201,24 @@
     <MESSAGE value="Final Sprint1" />
     <MESSAGE value="Correção criptografia" />
     <MESSAGE value="Correção em login (Login somente com usuario Ativo); Correção em criar e aterar usuario (Criar como Ativo; Combo box de grupo; Validação de preenchimento; Validação de CPF);" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correção em login (Login somente com usuario Ativo); Correção em criar e aterar usuario (Criar como Ativo; Combo box de grupo; Validação de preenchimento; Validação de CPF);" />
+    <MESSAGE value="Pequena alteração visual no LoginServlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pequena alteração visual no LoginServlet" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/Usuario/UsuarioDAO.java</url>
+          <line>190</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/Usuario/UsuarioDAO.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.apache.commons.dbcp2.DelegatingPreparedStatement" memberName="statement" />

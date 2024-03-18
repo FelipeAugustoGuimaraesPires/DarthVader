@@ -1,8 +1,8 @@
-package br.com.DarthVader.servlet;
+package br.com.DarthVader.servlet.Usuario;
 
 import br.com.DarthVader.config.Criptografia;
-import br.com.DarthVader.dao.UsuarioDAO;
-import br.com.DarthVader.modal.Usuario;
+import br.com.DarthVader.dao.Usuario.UsuarioDAO;
+import br.com.DarthVader.modal.Usuario.Usuario;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

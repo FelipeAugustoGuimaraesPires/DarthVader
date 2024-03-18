@@ -38,8 +38,9 @@
                   <option value="Estoquista">
                 </datalist>
             </div>
-
-            <button type="submit">Ok</button>
+            <c:if test="${sessionScope.loggedUser !=null}">
+                <button type="submit">Ok</button>
+            </c:if>
 
             <div><input type="hidden" name="id" id="id"></div>
         </section>
