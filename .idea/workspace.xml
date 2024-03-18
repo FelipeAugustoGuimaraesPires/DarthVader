@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="Produto add e listagem">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/CadastrodeProduto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Css/Cadastro.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Css/ListarProdutos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/PreviewImg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ListarProdutos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/ImagemDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/ProdutoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/ProdutoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/modal/Imagem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/alterarUsuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/alterarUsuario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="Tela de listagem e criaçao de produtos feitas" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710358497380</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Tela de listagem e criaçao de produtos feitas">
+      <option name="closed" value="true" />
+      <created>1710444820193</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710444820193</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +184,8 @@
     <MESSAGE value="Correção criptografia" />
     <MESSAGE value="Correção em login (Login somente com usuario Ativo); Correção em criar e aterar usuario (Criar como Ativo; Combo box de grupo; Validação de preenchimento; Validação de CPF);" />
     <MESSAGE value="Produto add e listagem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Produto add e listagem" />
+    <MESSAGE value="Tela de listagem e criaçao de produtos feitas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tela de listagem e criaçao de produtos feitas" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
