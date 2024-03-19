@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="Correção em login (Login somente com usuario Ativo); Correção em criar e aterar usuario (Criar como Ativo; Combo box de grupo; Validação de preenchimento; Validação de CPF);">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Css/VisualizacaoProdutos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ListarProdutosEstoquista.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/MARQUITO/DrwrcryWkAEf5fB.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/VisualizaçãodeProdutos.html" afterDir="false" />
+    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="add telas de visualizar e listagem estoquista">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/EstrelasAvaliacao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/EstrelaSalvarBanco.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/VisualizarProduto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/contadordeProdutos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CadastrodeProduto.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CadastrodeProduto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Css/Cadastro.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Css/Cadastro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Css/VisualizacaoProdutos.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Css/VisualizacaoProdutos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Javascript/PreviewImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Css/Avaliacao.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/VisualizaçãodeProdutos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/VisualizaçãodeProdutos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-03-18" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-03-18" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,15 +48,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Maven.DarthVader [tomcat7:run].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\arong\IdeaProjects\DarthVader\src\main\webapp\MARQUITO" />
@@ -157,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710262553193</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add telas de visualizar e listagem estoquista">
+      <option name="closed" value="true" />
+      <created>1710792327949</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710792327949</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,7 +195,8 @@
     <MESSAGE value="Final Sprint1" />
     <MESSAGE value="Correção criptografia" />
     <MESSAGE value="Correção em login (Login somente com usuario Ativo); Correção em criar e aterar usuario (Criar como Ativo; Combo box de grupo; Validação de preenchimento; Validação de CPF);" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correção em login (Login somente com usuario Ativo); Correção em criar e aterar usuario (Criar como Ativo; Combo box de grupo; Validação de preenchimento; Validação de CPF);" />
+    <MESSAGE value="add telas de visualizar e listagem estoquista" />
+    <option name="LAST_COMMIT_MESSAGE" value="add telas de visualizar e listagem estoquista" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

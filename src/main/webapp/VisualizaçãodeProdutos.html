@@ -4,64 +4,76 @@
     <meta charset="UTF-8">
     <title>Visualização de item</title>
     <link rel="stylesheet" href="Css/VisualizacaoProdutos.css">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
 
-<h1> TELA PRODUTO</h1>
+<h1>TELA PRODUTO</h1>
+<div class="container">
+    <div class="lado-esquerdo">
+        <div class="imagem-selecionada">
 
-<main>
-    <section>
-        <div class="container">
-            <div class="Lado-esquerdo">
-                <div class="itens">
-                    <div class="imagem-selecionada">
-                        <!--AQUI È ADICIONADO A IMAGEM SELECIONADA COMO PRINCIPAL-->
-                        <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem principal a ser adicionada">
-                    </div>
-                    <div class="imagens-carrossel">
-                        <!--AQUI DEVEM SER ADICIONADAS AS IMAGENS DO BANCO DO ITEM EM ESPECIFICO-->
-
-                        <div class="imagem">
-                            <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
-                        </div>
-                        <div class="imagem">
-                            <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
-                        </div>
-                        <div class="imagem">
-                            <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
-                        </div>
-                        <div class="imagem">
-                            <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
-                        </div>
-
-                    </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+<!--                    TROQUE AQUI AS IMAGENS A SEREM CHAMADAS DO BANCO DE DADOS-->
+                    <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
+                </div>
+                <div class="swiper-slide">
+                    <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
+                </div>
+                <div class="swiper-slide">
+                    <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
+                </div>
+                <div class="swiper-slide">
+                    <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
+                </div>
+                <div class="swiper-slide">
+                    <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
+                </div>
+                <div class="swiper-slide">
+                    <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
+                </div>
+                <div class="swiper-slide">
+                    <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
+                </div>
+                <div class="swiper-slide">
+                    <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
+                </div>
+                <div class="swiper-slide">
+                    <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
                 </div>
             </div>
-
-            <!-- PEGAR INFORMAÇOES E SUBSTITUIR OS CAMPOS POR VALORES DO BANCO-->
-            <div class="lado-direito">
-                <h6>MEU HERÓI</h6>
-                <h1>COMPRAR O PRÓPRIO MARQUITO</h1>
-                <p>ESSE CARA È INCRIVEL</p>
-                <span class="preco">R$ 1000000000000000,00</span>
-                <div class="options">
-                    <div class="quantidade">
-                        <div class="menos">
-                            -
-                        </div>
-                        <!--ADICIONAR A QUANTIDADE DO BANCO -->
-                        <span>0</span>
-                        <div class="mais">
-                            +
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-    </section>
-</main>
+    </div>
+        </div>
+    <div class="lado-direito">
+        <h1>MARQUITO DEUS</h1>
+        <p>O MAIOR HERÓI DA TERRA APENASA.</p>
+        <div>
+            <label for="rating">Avaliação: 1000</label>
+<!--            ADICIONAR A VARIAVEL SALVA NO BANCO DE AVALIAÇÃO-->
+        </div>
 
+        <h2>Preço: R$99,99</h2>
+        <div class="contador">
+            <button class="btn-quantidade" onclick="decrementar()">-</button>
+            <input type="text" class="input-quantidade" value="1" readonly>
+            <button class="btn-quantidade" onclick="incrementar()">+</button>
+        </div>
+        <button class="comprar-btn" disabled>
+            <i class="fa fa-shopping-cart"></i>
+            Comprar
+        </button>
+    </div>
+</div>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="Javascript/VisualizarProduto.js"></script>
 </body>
 </html>
