@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="add telas de visualizar e listagem estoquista">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/EstrelasAvaliacao.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/EstrelaSalvarBanco.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/VisualizarProduto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Javascript/contadordeProdutos.js" afterDir="false" />
+    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="Funçao de carrossel e estrelas add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CadastrodeProduto.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CadastrodeProduto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Css/Cadastro.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Css/Cadastro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Css/VisualizacaoProdutos.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Css/VisualizacaoProdutos.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Javascript/PreviewImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Css/Avaliacao.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/VisualizaçãodeProdutos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/VisualizaçãodeProdutos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-03-18" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2024-03-18" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710792327949</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Funçao de carrossel e estrelas add">
+      <option name="closed" value="true" />
+      <created>1710892072512</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710892072512</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,7 +192,8 @@
     <MESSAGE value="Correção criptografia" />
     <MESSAGE value="Correção em login (Login somente com usuario Ativo); Correção em criar e aterar usuario (Criar como Ativo; Combo box de grupo; Validação de preenchimento; Validação de CPF);" />
     <MESSAGE value="add telas de visualizar e listagem estoquista" />
-    <option name="LAST_COMMIT_MESSAGE" value="add telas de visualizar e listagem estoquista" />
+    <MESSAGE value="Funçao de carrossel e estrelas add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funçao de carrossel e estrelas add" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
