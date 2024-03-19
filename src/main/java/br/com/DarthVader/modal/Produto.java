@@ -10,7 +10,7 @@ public class Produto {
 
     private double preco;
     private int qtdEstoque;
-    private byte[] imagem;
+    private String imagem;
     private String estatus;
 
     public Produto() {
@@ -26,13 +26,25 @@ public class Produto {
         this.estatus="Ativo";
     }
 
-    public Produto(String id, String nome, int avaliacao, String descricao, double preco, int qtdEstoque, String estatus) {
+    public Produto(String id, String nome, int avaliacao, String descricao, double preco, int qtdEstoque, String imagem) {
         this.id = id;
         this.nome = nome;
         this.avaliacao = avaliacao;
         this.descricao = descricao;
         this.preco = preco;
         this.qtdEstoque = qtdEstoque;
+        this.imagem = imagem;
+        this.estatus="Ativo";
+    }
+
+    public Produto(String id, String nome, int avaliacao, String descricao, double preco, int qtdEstoque, String imagem, String estatus) {
+        this.id = id;
+        this.nome = nome;
+        this.avaliacao = avaliacao;
+        this.descricao = descricao;
+        this.preco = preco;
+        this.qtdEstoque = qtdEstoque;
+        this.imagem = imagem;
         this.estatus = estatus;
     }
 
@@ -84,11 +96,11 @@ public class Produto {
         this.qtdEstoque = qtdEstoque;
     }
 
-    public byte[] getImagem() {
+    public String getImagem() {
         return imagem;
     }
 
-    public void setImagem(byte[] imagem) {
+    public void setImagem(String imagem) {
         this.imagem = imagem;
     }
 
@@ -100,3 +112,4 @@ public class Produto {
         this.estatus = estatus;
     }
 }
+

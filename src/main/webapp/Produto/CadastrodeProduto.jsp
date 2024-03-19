@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,7 +9,14 @@
 
 </head>
 <body>
-    <form action="/cadastrar-produto" method="post">
+    <c:if test="${sessionScope.loggedUser != null || sessionScope.loggedUserEstoque != null}">
+        <span>${sessionScope.loggedUser}</span>
+        <span>${sessionScope.loggedUserEstoque}</span>
+        <a href="/logout"><button>Sair</button></a>
+        <a href="/PaginaInicial.jsp"><button>Menu</button></a>
+    </c:if>
+
+    <form action="/cadastrar-produto" method="post" enctype="multipart/form-data">
         <h1>Adicionar Produto</h1>
         <section>
 
@@ -45,10 +53,11 @@
 
 
             <div>
-                <label for="Prod-Foto">Upload de imagem</label>
-                <input type="file" name="Prod-Foto" id="Prod-Foto" accept="image/png, image/jpeg" onchange="previewImage(event)"/>
+                <label for="image">Upload de imagem</label>
+                <input type="file" name="image" id="image" accept="image/png, image/jpeg" onchange="previewImage(event)"/>
                 <img id="preview" src="#" alt="Prévia da imagem" style="max-width: 300px; max-height: 200px; display: none;"/>
             </div>
+
 
             <button type="submit">Ok</button>
             <div><input type="hidden" name="id" id="id"></div>

@@ -11,7 +11,7 @@ public class ProdutoDAO {
 
     public void cadastroProduto(Produto produto) {
 
-        String SQL = "insert into produto(nome,avaliacao,descricao,preco,Estoque,imagem, ESTATUS) values(?,?,?,?,?,?,?)";
+        String SQL = "insert into produto(nome, avaliacao, descricao, preco, Estoque, imagem, ESTATUS) values(?,?,?,?,?,?,?)";
 
         try {
             Connection connection = ConnectionPoolConfig.getConnection();
@@ -23,7 +23,7 @@ public class ProdutoDAO {
             preparedStatement.setString(3, produto.getDescricao());
             preparedStatement.setDouble(4, produto.getPreco());
             preparedStatement.setInt(5, produto.getQtdEstoque());
-            preparedStatement.setBytes(6, produto.getImagem());
+            preparedStatement.setString(6, produto.getImagem());
             preparedStatement.setString(7, produto.getEstatus());
 
             preparedStatement.execute();
@@ -48,7 +48,7 @@ public class ProdutoDAO {
             preparedStatement.setString(3, produto.getDescricao());
             preparedStatement.setDouble(4, produto.getPreco());
             preparedStatement.setInt(5, produto.getQtdEstoque());
-            preparedStatement.setBytes(6, produto.getImagem());
+            preparedStatement.setString(6, produto.getImagem());
             preparedStatement.setString(7, produto.getId());
 
             preparedStatement.execute();
@@ -84,10 +84,10 @@ public class ProdutoDAO {
                     double prodPreco = Double.parseDouble(preco);
                 String estoque = resultSet.getString("estoque");
                     int prodEstoque = Integer.parseInt(estoque);
-                //String prodImagem = resultSet.getString("imagem");
+                String prodImagem = resultSet.getString("imagem");
                 String prodStatus = resultSet.getString("ESTATUS");
 
-                Produto produto = new Produto(prodID, prodNome, prodAvaliacao, prodDescricao, prodPreco, prodEstoque, prodStatus);
+                Produto produto = new Produto(prodID, prodNome, prodAvaliacao, prodDescricao, prodPreco, prodEstoque, prodImagem ,prodStatus);
                 produtos.add(produto);
             }
 
@@ -144,4 +144,6 @@ public class ProdutoDAO {
 
         }
     }
+
+
 }

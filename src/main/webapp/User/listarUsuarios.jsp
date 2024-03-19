@@ -12,6 +12,7 @@
     <body>
         <c:if test="${sessionScope.loggedUser != null || sessionScope.loggedUserEstoque != null}">
             <span>${sessionScope.loggedUser}</span>
+            <span>${sessionScope.loggedUserEstoque}</span>
             <a href="/logout"><button>Sair</button></a>
             <a href="/PaginaInicial.jsp"><button>Menu</button></a>
         </c:if>

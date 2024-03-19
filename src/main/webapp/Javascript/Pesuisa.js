@@ -6,7 +6,7 @@
             tr = table.getElementsByTagName("tr");
 
             for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[1]; // Índice 1 corresponde à coluna do nome
+                td = tr[i].getElementsByTagName("td")[1];
 
                 if (td) {
                     txtValue = td.textContent || td.innerText;
