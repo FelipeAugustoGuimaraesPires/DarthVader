@@ -53,9 +53,27 @@
 
 
             <div>
-                <label for="image">Upload de imagem</label>
-                <input type="file" name="image" id="image" accept="image/png, image/jpeg" onchange="previewImage(event)"/>
+                <label for="image">Upload da primeira imagem</label>
+                <input type="file" name="image" id="image" accept="image/png, image/jpeg"  required/>
                 <img id="preview" src="#" alt="Prévia da imagem" style="max-width: 300px; max-height: 200px; display: none;"/>
+            </div>
+
+            <div>
+                <label for="image2">Upload da segunda imagem</label>
+                <input type="file" name="image2" id="image2" accept="image/png, image/jpeg"required/>
+                <img id="preview2" src="#" alt="Prévia da imagem" style="max-width: 300px; max-height: 200px; display: none;"/>
+            </div>
+
+            <div>
+                <label for="image3">Upload da terceira imagem</label>
+                <input type="file" name="image3" id="image3" accept="image/png, image/jpeg" required/>
+                <img id="preview3" src="#" alt="Prévia da imagem" style="max-width: 300px; max-height: 200px; display: none;"/>
+            </div>
+
+            <div>
+                <label for="image4">Upload da quarta imagem</label>
+                <input type="file" name="image4" id="image4" accept="image/png, image/jpeg" required/>
+                <img id="preview4" src="#" alt="Prévia da imagem" style="max-width: 300px; max-height: 200px; display: none;"/>
             </div>
 
 

@@ -50,12 +50,10 @@
                     <input type="text" value="${param.preco}" name="Prod-Preco" id="Prod-Preco" inputmode="decimal" min="0" oninput="formatPrice(this)" readonly/>
                 </div>
 
-
-                <div>
-                    <label for="image">Upload de imagem</label>
-                    <input type="file" name="image" id="image" accept="image/png, image/jpeg" onchange="previewImage(event)"/>
-                    <img id="preview" src="#" alt="Prévia da imagem" style="max-width: 300px; max-height: 200px; display: none;"/>
-                </div>
+                <div><input type="hidden" value="${param.imagem}" name="image" id="image"/></div>
+                <div><input type="hidden" value="${param.imagem2}" name="image2" id="image2"/></div>
+                <div><input type="hidden" value="${param.imagem3}" name="image3" id="image3"/></div>
+                <div><input type="hidden" value="${param.imagem4}" name="image4" id="image4"/></div>
 
                 <div><input type="hidden" value="${param.id}" name="id" id="id"></div>
 
@@ -65,39 +63,43 @@
     </c:if>
 
     <c:if test="${sessionScope.loggedUserEstoque !=null}">
-        <form action="/cadastrar-produto" method="post">
+        <form action="/cadastrar-produto" method="post" enctype="multipart/form-data">
             <h1>Adicionar Produto</h1>
             <section>
 
                 <div>
-                    <label for="Prod-Nome">Item</label>
-                    <input type="text" value="${param.nome}" name="Prod-Nome" id="Prod-Nome" placeholder="Produto" required minlength="2" maxlength="99"
+                    <label for="Prod-Nome-Alt">Item</label>
+                    <input type="text" value="${param.nome}" name="Prod-Nome-Alt" id="Prod-Nome-Alt" placeholder="Produto" required minlength="2" maxlength="99"
                            pattern="^[a-zA-Z][a-zA-Z\s]*$" title="Name should not contain any numbers or special characters." readonly/>
                 </div>
 
                 <div>
-                    <label for="Prod-Quantidade">Quantidade</label>
-                    <input name="Prod-Quantidade"  value="${param.estoque}" id="Prod-Quantidade" required/>
+                    <label for="Prod-Quantidade-Alt">Quantidade</label>
+                    <input name="Prod-Quantidade-Alt"  value="${param.estoque}" id="Prod-Quantidade-Alt" required/>
                 </div>
 
                 <div>
-                    <label for="Prod-Avaliacao">Avaliação</label>
-                    <input type="number" value="${param.avaliacao}" name="Prod-Avaliacao" id="Prod-Avaliacao" min="1" max="5" step="0.5" required readonly/>
+                    <label for="Prod-Avaliacao-Alt">Avaliação</label>
+                    <input type="number" value="${param.avaliacao}" name="Prod-Avaliacao-Alt" id="Prod-Avaliacao-Alt" min="1" max="5" step="0.5" required readonly/>
                 </div>
 
                 <div id="descricao">
-                    <label for="Prod-Descricao">Descrição</label>
-                    <textarea name="Prod-Descricao" id="Prod-Descricao" required maxlength="2000" oninput="updateCharacterCount()" readonly>${param.descricao}</textarea>
+                    <label for="Prod-Descricao-Alt">Descrição</label>
+                    <textarea name="Prod-Descricao-Alt" id="Prod-Descricao-Alt" required maxlength="2000" oninput="updateCharacterCount()" readonly>${param.descricao}</textarea>
                     <div id="characterCount"></div>
                 </div>
 
                 <div>
-                    <label for="Prod-Preco">Preço</label>
+                    <label for="Prod-Preco-Alt">Preço</label>
                     <span>R$</span>
-                    <input type="text" value="${param.preco}" name="Prod-Preco" id="Prod-Preco" inputmode="decimal" min="0" oninput="formatPrice(this)" readonly/>
+                    <input type="text" value="${param.preco}" name="Prod-Preco-Alt" id="Prod-Preco-Alt" inputmode="decimal" min="0" oninput="formatPrice(this)" readonly/>
                 </div>
 
-                    <div><input type="hidden" value="${param.id}" name="id" id="id"></div>
+                    <div><input type="hidden" value="${param.id}" name="id-Alt" id="id-Alt"></div>
+                    <div><input type="hidden" value="${param.imagem}" name="image-Alt" id="image-Alt"/></div>
+                    <div><input type="hidden" value="${param.imagem2}" name="image2-Alt" id="image2-Alt"/></div>
+                    <div><input type="hidden" value="${param.imagem3}" name="image3-Alt" id="image3-Alt"/></div>
+                    <div><input type="hidden" value="${param.imagem4}" name="image4-Alt" id="image4-Alt"/></div>
                     <button type="submit">Ok</button>
             </section>
         </form>

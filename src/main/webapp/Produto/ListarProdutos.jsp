@@ -37,6 +37,7 @@
                 <th>Preço</th>
                 <th>Quantidade em Estoque</th>
                 <th>Status</th>
+                <th>Imagem</th>
                     <th>Ações</th>
             </tr>
 
@@ -49,15 +50,20 @@
                         <td>${produtos.preco}</td>
                         <td>${produtos.qtdEstoque}</td>
                         <td>${produtos.estatus}</td>
+                        <td><img src="/img/${produtos.imagem}"></td>
                         <td>
-                            <a id="Atualizar" href="./Produto/AlteracaoDeProduto.jsp?id=${produtos.id}&nome=${produtos.nome}&avaliacao=${produtos.avaliacao}&descricao=${produtos.descricao}&preco=${produtos.preco}&estoque=${produtos.qtdEstoque}&estatus=${produtos.estatus}"><button>Atualizar</button></a>
+                            <a id="Atualizar" href="./Produto/AlteracaoDeProduto.jsp?id=${produtos.id}&nome=${produtos.nome}&avaliacao=${produtos.avaliacao}&descricao=${produtos.descricao}&preco=${produtos.preco}&estoque=${produtos.qtdEstoque}&estatus=${produtos.estatus}&imagem=${produtos.imagem}&imagem2=${produtos.imagem2}&imagem3=${produtos.imagem3}&imagem4=${produtos.imagem4}"><button>Atualizar</button></a>
+
+                            <c:if test="${sessionScope.loggedUser !=null}">
+                                <a id="Alterar" href="./Produto/AlterarImagem.jsp?id=${produtos.id}&nome=${produtos.nome}&avaliacao=${produtos.avaliacao}&descricao=${produtos.descricao}&preco=${produtos.preco}&estoque=${produtos.qtdEstoque}&estatus=${produtos.estatus}&imagem=${produtos.imagem}&imagem2=${produtos.imagem2}&imagem3=${produtos.imagem3}&imagem4=${produtos.imagem4}"><button>Alterar imagem</button></a>
+                            </c:if>
+
+                            <a id="Visualizar" href="./Produto/VisualizacaoDeProdutos.jsp?id=${produtos.id}&nome=${produtos.nome}&avaliacao=${produtos.avaliacao}&descricao=${produtos.descricao}&preco=${produtos.preco}&estoque=${produtos.qtdEstoque}&estatus=${produtos.estatus}&imagem=${produtos.imagem}&imagem2=${produtos.imagem2}&imagem3=${produtos.imagem3}&imagem4=${produtos.imagem4}"><button>Visualizar</button></a>
                             <c:if test="${sessionScope.loggedUser != null}">
-                                <div id="acao">
-                                    <form id= "formularioStatus" action="/habilitar-desabilitar-produto" method="post">
-                                        <input type="hidden" id="id" name="id" value=${produtos.id}>
-                                        <button id="botaoStatus" type="submit">Inativar/Reativar</button>
-                                    </form>
-                                </div>
+                                <form id= "formularioStatus" action="/habilitar-desabilitar-produto" method="post">
+                                    <input type="hidden" id="id" name="id" value=${produtos.id}>
+                                    <button id="botaoStatus" type="submit">Inativar/Reativar</button>
+                                </form>
                             </c:if>
                         </td>
 
@@ -65,5 +71,18 @@
                 </c:forEach>
             </tbody>
         </table>
+
+        <script src="../Javascript/popupConfirmation.js"></script>
+        <script>
+          // Adicione um evento de clique ao botão "Inativar/Reativar"
+          document.getElementById("botaoStatus").addEventListener("click", function(event) {
+            // Impedir o comportamento padrão do botão
+            event.preventDefault();
+
+            // Chamar a função showConfirmationPopup() ao clicar no botão "Inativar/Reativar"
+            showConfirmationPopup();
+          });
+        </script>
+
     </body>
 </html>

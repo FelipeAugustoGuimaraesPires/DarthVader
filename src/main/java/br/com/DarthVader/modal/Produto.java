@@ -11,10 +11,14 @@ public class Produto {
     private double preco;
     private int qtdEstoque;
     private String imagem;
+    private String imagem2;
+    private String imagem3;
+    private String imagem4;
     private String estatus;
 
     public Produto() {
     }
+
 
     public Produto(String id, String nome, int avaliacao, String descricao, double preco, int qtdEstoque) {
         this.id = id;
@@ -26,7 +30,7 @@ public class Produto {
         this.estatus="Ativo";
     }
 
-    public Produto(String id, String nome, int avaliacao, String descricao, double preco, int qtdEstoque, String imagem) {
+    public Produto(String id, String nome, int avaliacao, String descricao, double preco, int qtdEstoque, String imagem, String imagem2, String imagem3, String imagem4) {
         this.id = id;
         this.nome = nome;
         this.avaliacao = avaliacao;
@@ -34,10 +38,13 @@ public class Produto {
         this.preco = preco;
         this.qtdEstoque = qtdEstoque;
         this.imagem = imagem;
+        this.imagem2 = imagem2;
+        this.imagem3 = imagem3;
+        this.imagem4 = imagem4;
         this.estatus="Ativo";
     }
 
-    public Produto(String id, String nome, int avaliacao, String descricao, double preco, int qtdEstoque, String imagem, String estatus) {
+    public Produto(String id, String nome, int avaliacao, String descricao, double preco, int qtdEstoque, String imagem, String imagem2, String imagem3, String imagem4, String estatus) {
         this.id = id;
         this.nome = nome;
         this.avaliacao = avaliacao;
@@ -45,6 +52,9 @@ public class Produto {
         this.preco = preco;
         this.qtdEstoque = qtdEstoque;
         this.imagem = imagem;
+        this.imagem2 = imagem2;
+        this.imagem3 = imagem3;
+        this.imagem4 = imagem4;
         this.estatus = estatus;
     }
 
@@ -52,64 +62,43 @@ public class Produto {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getNome() {
         return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public int getAvaliacao() {
         return avaliacao;
     }
 
-    public void setAvaliacao(int avaliacao) {
-        this.avaliacao = avaliacao;
-    }
-
     public String getDescricao() {
         return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
     }
 
     public double getPreco() {
         return preco;
     }
 
-    public void setPreco(double preco) {
-        this.preco = preco;
-    }
-
     public int getQtdEstoque() {
         return qtdEstoque;
-    }
-
-    public void setQtdEstoque(int qtdEstoque) {
-        this.qtdEstoque = qtdEstoque;
     }
 
     public String getImagem() {
         return imagem;
     }
 
-    public void setImagem(String imagem) {
-        this.imagem = imagem;
+    public String getImagem2() {
+        return imagem2;
+    }
+
+    public String getImagem3() {
+        return imagem3;
+    }
+
+    public String getImagem4() {
+        return imagem4;
     }
 
     public String getEstatus() {
         return estatus;
     }
-
-    public void setEstatus(String estatus) {
-        this.estatus = estatus;
-    }
 }
-

@@ -11,7 +11,7 @@ public class ProdutoDAO {
 
     public void cadastroProduto(Produto produto) {
 
-        String SQL = "insert into produto(nome, avaliacao, descricao, preco, Estoque, imagem, ESTATUS) values(?,?,?,?,?,?,?)";
+        String SQL = "insert into produto(nome, avaliacao, descricao, preco, Estoque, imagem, imagem2, imagem3, imagem4, ESTATUS) values(?,?,?,?,?,?,?,?,?,?)";
 
         try {
             Connection connection = ConnectionPoolConfig.getConnection();
@@ -24,7 +24,10 @@ public class ProdutoDAO {
             preparedStatement.setDouble(4, produto.getPreco());
             preparedStatement.setInt(5, produto.getQtdEstoque());
             preparedStatement.setString(6, produto.getImagem());
-            preparedStatement.setString(7, produto.getEstatus());
+            preparedStatement.setString(7, produto.getImagem2());
+            preparedStatement.setString(8, produto.getImagem3());
+            preparedStatement.setString(9, produto.getImagem4());
+            preparedStatement.setString(10, produto.getEstatus());
 
             preparedStatement.execute();
 
@@ -36,7 +39,7 @@ public class ProdutoDAO {
     }
 
     public void alterarProduto(Produto produto) {
-        String SQL = "UPDATE produto SET nome = ?, avaliacao = ?, descricao = ?, preco = ?, estoque = ?, imagem = ? WHERE id = ?";
+        String SQL = "UPDATE produto SET nome = ?, avaliacao = ?, descricao = ?, preco = ?, estoque = ?, imagem = ?, imagem2 = ?, imagem3 = ?, imagem4 = ? WHERE id = ?";
 
         try {
             Connection connection = ConnectionPoolConfig.getConnection();
@@ -49,7 +52,10 @@ public class ProdutoDAO {
             preparedStatement.setDouble(4, produto.getPreco());
             preparedStatement.setInt(5, produto.getQtdEstoque());
             preparedStatement.setString(6, produto.getImagem());
-            preparedStatement.setString(7, produto.getId());
+            preparedStatement.setString(7, produto.getImagem2());
+            preparedStatement.setString(8, produto.getImagem3());
+            preparedStatement.setString(9, produto.getImagem4());
+            preparedStatement.setString(10, produto.getId());
 
             preparedStatement.execute();
 
@@ -85,9 +91,12 @@ public class ProdutoDAO {
                 String estoque = resultSet.getString("estoque");
                     int prodEstoque = Integer.parseInt(estoque);
                 String prodImagem = resultSet.getString("imagem");
+                String prodImagem2 = resultSet.getString("imagem2");
+                String prodImagem3 = resultSet.getString("imagem3");
+                String prodImagem4 = resultSet.getString("imagem4");
                 String prodStatus = resultSet.getString("ESTATUS");
 
-                Produto produto = new Produto(prodID, prodNome, prodAvaliacao, prodDescricao, prodPreco, prodEstoque, prodImagem ,prodStatus);
+                Produto produto = new Produto(prodID, prodNome, prodAvaliacao, prodDescricao, prodPreco, prodEstoque, prodImagem, prodImagem2, prodImagem3, prodImagem4 ,prodStatus);
                 produtos.add(produto);
             }
 
