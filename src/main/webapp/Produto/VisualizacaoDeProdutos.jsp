@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Visualização de item</title>
-    <link rel="stylesheet" href="Css/VisualizacaoProdutos.css">
+    <link rel="stylesheet" href="../Css/VisualizacaoProdutos.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
@@ -52,6 +52,13 @@
         </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="Javascript/VisualizarProduto.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper.mySwiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
