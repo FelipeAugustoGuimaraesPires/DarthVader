@@ -4,25 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="Inserção de imagem no banco de dados">
+    <list default="true" id="ae868b7a-d2fb-46c3-887e-059e5b112113" name="Changes" comment="Inserção de até 4 imagens por produto no banco de dados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/ProdutoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/dao/ProdutoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/modal/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/modal/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Produto/CadastrarProdutoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/DarthVader/servlet/Produto/CadastrarProdutoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Javascript/confirma.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Produto/AlteracaoDeProduto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Produto/AlteracaoDeProduto.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Produto/CadastrodeProduto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Produto/CadastrodeProduto.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Produto/ListarProdutos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Produto/ListarProdutos.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/dao/ProdutoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/DarthVader/dao/ProdutoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/modal/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/DarthVader/modal/Produto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/Produto/CadastrarProdutoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/DarthVader/servlet/Produto/CadastrarProdutoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Css/VisualizacaoProdutos.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Css/VisualizacaoProdutos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Produto/VisualizacaoDeProdutos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Produto/VisualizacaoDeProdutos.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/SESSIONS.ser" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/SESSIONS.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/AlteracaoDeProduto_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/AlteracaoDeProduto_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/AlteracaoDeProduto_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/AlteracaoDeProduto_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/CadastrodeProduto_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/CadastrodeProduto_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/CadastrodeProduto_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/CadastrodeProduto_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/ListarProdutos_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/ListarProdutos_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/ListarProdutos_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/ListarProdutos_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/VisualizacaoDeProdutos_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/VisualizacaoDeProdutos_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/VisualizacaoDeProdutos_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/Produto/VisualizacaoDeProdutos_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,20 +55,24 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2dGq7yQslV544ehsEOEVXFNADgM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "felipe__augusto",
-    "last_opened_file_path": "C:/Users/LENOVO/IdeaProjects/DarthVader/src/main/webapp/Produto"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;felipe__augusto&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LENOVO/IdeaProjects/DarthVader/src/main/webapp/Produto&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\webapp\Produto" />
@@ -204,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710793438977</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Inserção de até 4 imagens por produto no banco de dados">
+      <option name="closed" value="true" />
+      <created>1711027601026</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711027601026</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,7 +227,8 @@
     <MESSAGE value="Pequena alteração visual no LoginServlet" />
     <MESSAGE value="Cadastro e listagem de produtos, seguindo a maioria das especificações dadas" />
     <MESSAGE value="Inserção de imagem no banco de dados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inserção de imagem no banco de dados" />
+    <MESSAGE value="Inserção de até 4 imagens por produto no banco de dados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inserção de até 4 imagens por produto no banco de dados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

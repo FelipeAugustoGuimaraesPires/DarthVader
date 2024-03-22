@@ -1,3 +1,69 @@
+.container {
+    display: flex;
+}
+
+.lado-esquerdo {
+    flex: 1;
+    padding: 20px;
+}
+
+.lado-direito {
+    flex: 1;
+    padding: 20px;
+}
+
+.imagem-selecionada {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.avaliacao {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.contador {
+    margin-top: 20px;
+}
+
+.btn-quantidade {
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.input-quantidade {
+    width: 50px;
+    text-align: center;
+}
+
+.comprar-btn {
+    margin-top: 20px;
+    background-color: #ccc;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.comprar-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.fa-shopping-cart {
+    margin-right: 5px;
+}
 
 .container{
     display:flex;

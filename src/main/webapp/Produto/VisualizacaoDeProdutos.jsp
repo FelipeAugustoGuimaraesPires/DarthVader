@@ -5,64 +5,53 @@
     <meta charset="UTF-8">
     <title>Visualização de item</title>
     <link rel="stylesheet" href="Css/VisualizacaoProdutos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-
-<h1> TELA PRODUTO</h1>
-
-<main>
-    <section>
-        <div class="container">
-            <div class="Lado-esquerdo">
-                <div class="itens">
-                    <div class="imagem-selecionada">
-                        <!--AQUI È ADICIONADO A IMAGEM SELECIONADA COMO PRINCIPAL-->
-                        <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem principal a ser adicionada">
-                    </div>
-                    <div class="imagens-carrossel">
-                        <!--AQUI DEVEM SER ADICIONADAS AS IMAGENS DO BANCO DO ITEM EM ESPECIFICO-->
-
-                        <div class="imagem">
-                            <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
-                        </div>
-                        <div class="imagem">
-                            <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
-                        </div>
-                        <div class="imagem">
+    <h1>TELA PRODUTO</h1>
+    <div class="container">
+        <div class="lado-esquerdo">
+            <div class="imagem-selecionada">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
                             <img src="/img/${param.imagem}" alt="Imagem a ser adicionada">
                         </div>
-                        <div class="imagem">
-                            <img src="MARQUITO/DrwrcryWkAEf5fB.jpg" alt="Imagem a ser adicionada">
+                        <div class="swiper-slide">
+                            <img src="/img/${param.imagem2}" alt="Imagem a ser adicionada">
                         </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- PEGAR INFORMAÇOES E SUBSTITUIR OS CAMPOS POR VALORES DO BANCO-->
-            <div class="lado-direito">
-                <h6>MEU HERÓI</h6>
-                <h1>COMPRAR O PRÓPRIO MARQUITO</h1>
-                <p>ESSE CARA È INCRIVEL</p>
-                <span class="preco">R$ 1000000000000000,00</span>
-                <div class="options">
-                    <div class="quantidade">
-                        <div class="menos">
-                            -
+                        <div class="swiper-slide">
+                            <img src="/img/${param.imagem3}" alt="Imagem a ser adicionada">
                         </div>
-                        <!--ADICIONAR A QUANTIDADE DO BANCO -->
-                        <span>0</span>
-                        <div class="mais">
-                            +
+                        <div class="swiper-slide">
+                            <img src="/img/${param.imagem4}" alt="Imagem a ser adicionada">
                         </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
-
         </div>
-    </section>
-</main>
-
-
+        <div class="lado-direito">
+            <h1>${param.nome}</h1>
+            <p>${param.descricao}</p>
+            <div>
+                <label>Avaliação: </label>
+                <span id="avaliacao"></span>
+            </div>
+            <h2>Preço: ${param.preco}</h2>
+            <div class="contador">
+                <button class="btn-quantidade" onclick="decrementar()">-</button>
+                <input type="text" class="input-quantidade" value="1" min="1" max="5">
+                <button class="btn-quantidade" onclick="incrementar()">+</button>
+            </div>
+            <button class="comprar-btn" disabled>
+                <i class="fa fa-shopping-cart"></i>
+                Comprar
+            </button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="Javascript/VisualizarProduto.js"></script>
 </body>
 </html>
