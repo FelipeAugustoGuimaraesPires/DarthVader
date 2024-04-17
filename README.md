@@ -3,10 +3,10 @@ P.I - 4 semestre
 # Protótipo do Site
 
   ![Login](Login.png)
-  ![Cadastro](Paginasdosite/Cadastro.png)
+  ![Cadastro](Cadastro.png)
   ![Cadastro](Cadastro2.png)
-  ![Editar Cliente](EditarCliente.png)
-  ![Editar Cliente](EditarCliente2.png)
+  ![Editar Cliente](EditaCliente.png)
+  ![Editar Cliente](EditarCiente2.png)
 
 Script Banco de dados
 
