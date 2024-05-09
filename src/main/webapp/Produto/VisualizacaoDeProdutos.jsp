@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Visualização de item</title>
-    <link rel="stylesheet" href="../Css/VisualizacaoProdutos.css">
+    <link rel="stylesheet" href="../Css/Produto/VisualizacaoProdutos.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
@@ -36,14 +36,14 @@
             <h1>${param.nome}</h1>
             <p>${param.descricao}</p>
             <div>
-                <label>Avaliação: </label>
+                <label>Avaliação: ${param.avaliacao}</label>
                 <span id="avaliacao"></span>
             </div>
-            <h2>Preço: ${param.preco}</h2>
+            <h2>Preço: R$ ${param.preco}</h2>
             <div class="contador">
                 <button class="btn-quantidade" onclick="decrementar()">-</button>
                 <input type="text" class="input-quantidade" value="1" min="1" max="5">
-                <button class="btn-quantidade" onclick="incrementar()">+</button>
+                <button class="btn-quantidade" onclick="incrementar(${param.estoque})">+</button>
             </div>
             <button class="comprar-btn" disabled>
                 <i class="fa fa-shopping-cart"></i>
@@ -52,13 +52,6 @@
         </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper.mySwiper', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+    <script src="../Javascript/Produto/Visualizar.js"></script>
 </body>
 </html>

@@ -13,19 +13,7 @@
     </head>
 
     <body>
-        <form action="/login" method="post">
-            <span>${requestScope.mensagem}</span>
-            <br>
-
-            <label for="email"> Usuario </label>
-            <input type="text" id="email" name="email">
-
-            <br>
-
-            <label for="senha"> Senha </label>
-            <input type="password" id="senha" name="senha">
-
-            <button type="submit">Login</button>
-        </form>
+        <a href="InicioBackOffice.jsp"><button>Visão BackOffice</button></a>
+        <a href="/Cliente/TelaDeLogin.jsp"><button>Visão Cliente</button></a>
     </body>
 </html>

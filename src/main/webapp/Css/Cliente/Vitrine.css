@@ -1,0 +1,136 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.logo img {
+    height: 80px;
+    border-radius: 5%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn1 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #466688;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bi-cart {
+    font-size: 24px;
+    color: #007bff;
+}
+
+
+/* falta coloca o carrossel*/
+
+.cols{
+    display: grid;
+    padding: 4rem 1rem;
+    background-color: #f8f8f8; /* Adiciona um fundo claro para destacar os cards */
+}
+
+.cols-5{
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem; /* Aumenta o espaço entre os cards */
+}
+
+.cols-5 img{
+    max-width: 100%;
+    border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
+}
+
+.cols>div{
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1); /* Adiciona uma sombra suave para dar profundidade */
+}
+
+.cols>*:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2); /* Aumenta a sombra no hover para um efeito de "levantar" o card */
+}
+
+.section-title{
+    text-align:center ;
+    margin-top: 4rem;
+    font-size: 2rem; /* Aumenta o tamanho da fonte para destacar mais o título */
+    color: #333; /* Escurece a cor do texto para melhor contraste */
+}
+
+.subtitle-underline{
+    width: 100px;
+    height: 5px;
+    background-color: #466688;
+    border-radius: 9999px;
+    margin: 2px auto 0 auto;
+}
+
+.product{
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; /* Adiciona um padding para dar mais espaço ao conteúdo dentro do card */
+}
+
+.product-name{
+    font-weight: 600;
+    margin-top: 0rem; /* Remove a margem superior */
+    margin-bottom: 0rem; /* Remove a margem inferior */
+    line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
+}
+
+.rate{
+    color: yellow;
+    font-size: 1.3rem;
+    margin-bottom: 0rem; /* Remove a margem inferior */
+    line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
+}
+
+.product-price{
+    font-weight: 600;
+    color: #333; /* Escurece a cor do preço para melhor contraste */
+    margin-top: 0rem; /* Remove a margem superior */
+    line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
+}
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #50C878; /* Cor verde esmeralda */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0.7; /* Torna o botão meio fosco */
+}
+
+.btn:hover {
+    background-color: #409961; /* Escurece um pouco a cor no hover */
+    opacity: 1; /* Restaura a opacidade no hover */
+}
+
+.product-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os itens na horizontal */
+    gap: 10px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+

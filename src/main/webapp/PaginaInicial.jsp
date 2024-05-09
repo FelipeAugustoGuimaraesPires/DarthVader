@@ -22,6 +22,7 @@
     <a href="/achar-todos-produtos">Listar Produto</a>
     <a href="/achar-todos-usuarios">Listar Usuário</a>
     <a href="">Listar Pedidos</a>
+    <a href="/achar-todos-produtos-cliente">Visão vitrine</a>
 </body>
 
 </html>

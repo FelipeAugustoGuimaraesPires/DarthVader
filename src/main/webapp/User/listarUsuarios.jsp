@@ -2,8 +2,7 @@
 <html lang="pt-BR">
 <%@ page contentType="text/html; charset=UTF-8" %>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-    <script src="../Javascript/Pesuisa.js"></script>
-    <script src="../Javascript/confirma.js"></script>
+    <script src="../Javascript/User/confirma.js"></script>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +18,7 @@
 
         <h1>Lista de Usuário</h1>
         <c:if test="${sessionScope.loggedUser !=null}">
-            <a href="CriarUsuario.jsp"><button style="font-size:24px" >+</button></a>
+            <a href="./User/CriarUsuario.jsp"><button style="font-size:24px" >+</button></a>
         </c:if>
 
         <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="procurar..">

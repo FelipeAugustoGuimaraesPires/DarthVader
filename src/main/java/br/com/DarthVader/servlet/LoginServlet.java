@@ -30,7 +30,8 @@ public class LoginServlet extends HttpServlet {
          boolean isADM = new UsuarioDAO().VerificarGrupo(user);
 
          if (isValid&&isActive&&isADM){
-             req.getSession().setAttribute("loggedUser", email);
+             String nome= new UsuarioDAO().AchaNome(user);
+             req.getSession().setAttribute("loggedUser", nome);
 
              resp.sendRedirect("PaginaInicial.jsp");
          } else if (isValid&&isActive) {

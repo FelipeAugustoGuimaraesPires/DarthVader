@@ -262,4 +262,34 @@ public class UsuarioDAO {
 
         }
     }
+
+    public String AchaNome (Usuario user){
+        String SQL ="select * from usuario where email = ?";
+
+        try {
+            Connection connection = ConnectionPoolConfig.getConnection();
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, user.getEmail());
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            System.out.println("sucesso em selecionar email");
+
+            String nome=null;
+
+            while (resultSet.next()){
+                nome= resultSet.getString("nome");
+            }
+
+            return nome;
+
+        }catch (Exception e){
+
+            System.out.println("ERRO: "+e.getMessage());
+
+            return null;
+        }
+    }
 }

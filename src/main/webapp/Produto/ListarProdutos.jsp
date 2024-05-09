@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <%@ page contentType="text/html; charset=UTF-8" %>
-        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-        <script src="../Javascript/Pesuisa.js"></script>
+<html>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<script src="../Javascript/Produto/Pesquisa.js"></script>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="Css/ListarProdutos.css">
+        <link rel="stylesheet" href="../Css/Produto/ListarProdutos.css">
         <title>Listagem de Produtos</title>
     </head>
     <body>
@@ -20,7 +20,7 @@
         <h1>Listagem de Produtos</h1>
 
         <div id="searchBar">
-        <input type="text" id="searchInput" placeholder="Pesquisar...">
+        <input type="text" id="searchInput" onkeyup="myFunction()" placeholder="Pesquisar...">
         <button>Buscar</button>
         </div>
 
@@ -33,11 +33,9 @@
                 <th>ID</th>
                 <th>Nome</th>
                 <th>Avaliação</th>
-                <th>Descrição</th>
                 <th>Preço</th>
                 <th>Quantidade em Estoque</th>
                 <th>Status</th>
-                <th>Imagem</th>
                     <th>Ações</th>
             </tr>
 
@@ -46,11 +44,9 @@
                         <td>${produtos.id}</td>
                         <td>${produtos.nome}</td>
                         <td>${produtos.avaliacao}</td>
-                        <td>${produtos.descricao}</td>
                         <td>${produtos.preco}</td>
                         <td>${produtos.qtdEstoque}</td>
                         <td>${produtos.estatus}</td>
-                        <td><img src="/img/${produtos.imagem}"></td>
                         <td>
                             <a id="Atualizar" href="./Produto/AlteracaoDeProduto.jsp?id=${produtos.id}&nome=${produtos.nome}&avaliacao=${produtos.avaliacao}&descricao=${produtos.descricao}&preco=${produtos.preco}&estoque=${produtos.qtdEstoque}&estatus=${produtos.estatus}&imagem=${produtos.imagem}&imagem2=${produtos.imagem2}&imagem3=${produtos.imagem3}&imagem4=${produtos.imagem4}"><button>Atualizar</button></a>
 
@@ -72,7 +68,7 @@
             </tbody>
         </table>
 
-        <script src="../Javascript/popupConfirmation.js"></script>
+        <script src="../Javascript/Produto/popupConfirmation.js"></script>
         <script>
           // Adicione um evento de clique ao botão "Inativar/Reativar"
           document.getElementById("botaoStatus").addEventListener("click", function(event) {

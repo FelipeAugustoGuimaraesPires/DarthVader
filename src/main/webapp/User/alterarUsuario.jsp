@@ -10,7 +10,7 @@
               href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
         <link rel="stylesheet" href="style.css">
-        <script src="../Javascript/verifica.js"></script>
+        <script src="../Javascript/User/verifica.js"></script>
     </head>
         <c:if test="${sessionScope.loggedUser !=null}">
             <span>${sessionScope.loggedUser}</span>
