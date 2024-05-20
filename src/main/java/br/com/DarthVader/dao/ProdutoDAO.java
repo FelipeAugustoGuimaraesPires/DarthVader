@@ -112,6 +112,53 @@ public class ProdutoDAO {
         }
     }
 
+    public List<Produto> InformacoesProduto(String id) {
+
+        String SQL = "select * from produto where id = ?";
+
+        try {
+            Connection connection = ConnectionPoolConfig.getConnection();
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, id);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            List<Produto> produtos = new ArrayList<>();
+
+            while (resultSet.next()) {
+                String prodID = resultSet.getString("id");
+                String prodNome = resultSet.getString("nome");
+                String avaliacao = resultSet.getString("avaliacao");
+                int prodAvaliacao= Integer.parseInt(avaliacao);
+                String prodDescricao = resultSet.getString("descricao");
+                String preco = resultSet.getString("preco");
+                double prodPreco = Double.parseDouble(preco);
+                String estoque = resultSet.getString("estoque");
+                int prodEstoque = Integer.parseInt(estoque);
+                String prodImagem = resultSet.getString("imagem");
+                String prodImagem2 = resultSet.getString("imagem2");
+                String prodImagem3 = resultSet.getString("imagem3");
+                String prodImagem4 = resultSet.getString("imagem4");
+                String prodStatus = resultSet.getString("ESTATUS");
+
+                Produto produto = new Produto(prodID, prodNome, prodAvaliacao, prodDescricao, prodPreco, prodEstoque, prodImagem, prodImagem2, prodImagem3, prodImagem4 ,prodStatus);
+                produtos.add(produto);
+            }
+
+            System.out.println("Sucesso na seleção");
+
+            connection.close();
+
+            return produtos;
+
+        } catch (Exception e) {
+            System.out.println("Erro na conexão");
+            return Collections.emptyList();
+        }
+    }
+
     public void HabilitaDesabilitaProd(String prodid){
         String SQL ="select * from produto where id = ?";
 

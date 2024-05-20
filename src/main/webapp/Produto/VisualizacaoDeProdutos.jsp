@@ -40,15 +40,14 @@
                 <span id="avaliacao"></span>
             </div>
             <h2>Preço: R$ ${param.preco}</h2>
-            <div class="contador">
-                <button class="btn-quantidade" onclick="decrementar()">-</button>
-                <input type="text" class="input-quantidade" value="1" min="1" max="5">
-                <button class="btn-quantidade" onclick="incrementar(${param.estoque})">+</button>
-            </div>
-            <button class="comprar-btn" disabled>
-                <i class="fa fa-shopping-cart"></i>
-                Comprar
-            </button>
+
+            <form action="/adicionar-no-carrinho" method="post">
+                <input type="hidden" id="id" name="id" value="${param.id}" />
+                <input type="hidden" name="cliId" value="${param.cliId}"/>
+                <button type="submit">
+                    Comprar
+                </button>
+            </form>
         </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

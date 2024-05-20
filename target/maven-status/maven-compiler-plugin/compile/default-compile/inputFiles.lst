@@ -1,5 +1,6 @@
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Cliente\TornarFaturamentoServlet.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Usuario\HabilitarDesabilitarServlet.java
+C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Compra\VerCarrinhoServlet.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Produto\CadastrarProdutoServlet.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\dao\ProdutoDAO.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Cliente\ListarEnderecosServlet.java
@@ -11,6 +12,7 @@ C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\config\ConnectionPoolConfig.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\config\Criptografia.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Cliente\DesabilitarEnderecoServlet.java
+C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\dao\CarrinhoDAO.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\modal\Produto.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\LoginServlet.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Cliente\VerificarCepServlet.java
@@ -18,10 +20,13 @@ C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\dao\UsuarioDAO.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\filtro\filtroDeAutenticacao.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\dao\ClienteDAO.java
+C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Compra\RemoverProdutoServlet.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Cliente\EditarClienteServlet.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Cliente\Login.java
+C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Compra\AdicionarNoCarrinhoServlet.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Produto\HabilitarDesabilitarProdServlet.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Produto\ListarProdutosServlet.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\Usuario\ListarUsuariosServlet.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\modal\Usuario.java
 C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\servlet\LogoutServlet.java
+C:\Users\LENOVO\IdeaProjects\DarthVader\src\main\java\br\com\DarthVader\modal\Carrinho.java

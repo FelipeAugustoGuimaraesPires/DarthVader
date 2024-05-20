@@ -29,9 +29,17 @@
                     <button type="submit">Visualizar meus endereços</button>
                 </form>
             </div>
-            <div class="buttons">
-                <i class="bi bi-cart-fill"></i>
-            </div>
+            <a href="/Compra/Visu.jsp">Meus pedidos</a>
+
+            <form action="/ver-carrinho" method="get">
+                <input type="hidden" id="tela" name="tela" value="Vitrine">
+                <input type="hidden" id="email" name="email" value="${sessionScope.email}">
+                <div class="buttons">
+                    <button type="submit">
+                        <i class="bi bi-cart-fill"></i>
+                    </button>
+                </div>
+            </form>
         </div>
     </c:if>
 
@@ -56,22 +64,13 @@
         <div class="cols cols-5">
             <c:forEach var="produtos" items="${produtos}" varStatus="loop">
                 <div class="product">
-                    <a href="./Produto/VisualizacaoDeProdutos.jsp?id=${produtos.id}&nome=${produtos.nome}&avaliacao=${produtos.avaliacao}&descricao=${produtos.descricao}&preco=${produtos.preco}&estoque=${produtos.qtdEstoque}&estatus=${produtos.estatus}&imagem=${produtos.imagem}&imagem2=${produtos.imagem2}&imagem3=${produtos.imagem3}&imagem4=${produtos.imagem4}">
-                        <img src="/img/${produtos.imagem}" alt="Imagem Item">
+                    <a href="./Produto/VisualizacaoDeProdutos.jsp?id=${produtos.id}&cliId=${sessionScope.email}&nome=${produtos.nome}&avaliacao=${produtos.avaliacao}&descricao=${produtos.descricao}&preco=${produtos.preco}&estoque=${produtos.qtdEstoque}&estatus=${produtos.estatus}&imagem=${produtos.imagem}&imagem2=${produtos.imagem2}&imagem3=${produtos.imagem3}&imagem4=${produtos.imagem4}" style="text-decoration: none; color: inherit;">
+                        <img src="/img/${produtos.imagem}" alt="Imagem do Item">
+                        <p class="product-name">${produtos.nome}</p>
+                        <p class="product-name">${produtos.descricao}</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price">${produtos.preco}</p>
                     </a>
-                    <p class="product-name">${produtos.nome}</p>
-                    <p class="product-name">${produtos.descricao}</p>
-                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                    <p class="product-price">${produtos.preco}</p>
-                    <div class="product-actions">
-                        <button class="btn add-to-cart">Adicionar</button>
-                        <div class="quantity-control" style="display: none;">
-                            <input type="hidden" id="Estoque_${loop.index}" value="${produtos.qtdEstoque}">
-                            <button class="btn decrement">-</button>
-                            <span class="quantity">1</span>
-                            <button class="btn increment">+</button>
-                        </div>
-                    </div>
                 </div>
             </c:forEach>
         </div>

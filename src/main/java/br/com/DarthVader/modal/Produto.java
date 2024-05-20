@@ -101,4 +101,12 @@ public class Produto {
     public String getEstatus() {
         return estatus;
     }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
 }
